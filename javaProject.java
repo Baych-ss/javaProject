@@ -14,7 +14,7 @@ public class Main
 	    int count2 = 0;
 	    int count3 = 0;
 	    int allows = 5;
-	    while(allows > 1){
+	    while(allows > 0){
 		for(int i=0; i<3; i++){
 		    array[i] = scan.nextInt();
 		}
@@ -27,6 +27,7 @@ public class Main
 		    }
 		    else 
 		        System.out.println("First box is not here");
+		        count1 = 0;
 		    break;
     }
         for(int i=0; i<3; i++){
@@ -38,6 +39,7 @@ public class Main
 		    }
 		    else 
 		        System.out.println("Second box is not here");
+		        count2 = 0;
 		    break;
     }
         for(int i=0; i<3; i++){
@@ -50,6 +52,7 @@ public class Main
 		    }
 		    else 
 		        System.out.println("Third box is not here");
+		        count3 = 0;
 		        break;
 		    
         }
