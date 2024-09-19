@@ -10,6 +10,9 @@ public class Main
 	    boolean isFisrtMatch;
 	    boolean isSecondMatch;
 	    boolean isThirdMatch;
+	    int count1 = 0;
+	    int count2 = 0;
+	    int count3 = 0;
 	    int allows = 5;
 	    while(allows > 1){
 		for(int i=0; i<3; i++){
@@ -19,7 +22,7 @@ public class Main
 		    isFisrtMatch = array[0] == firstBox;
 		    if(isFisrtMatch){
 		        System.out.println("First box found");
-		        
+		        count1 = 1;
 		        break;
 		    }
 		    else 
@@ -30,7 +33,7 @@ public class Main
 		    isSecondMatch = array[1] == secondBox;
 		    if(isSecondMatch){
 		        System.out.println("Second box found");
-		        
+		        count2 = 1;
 		        break;
 		    }
 		    else 
@@ -42,7 +45,7 @@ public class Main
 		    
 		    if(isThirdMatch){
 		        System.out.println("Third box found");
-		        
+		        count3 = 1;
 		        break;
 		    }
 		    else 
@@ -50,7 +53,10 @@ public class Main
 		        break;
 		    
         }
-		
+		if((count1 == 1) && (count2 == 1) && (count3 == 1)){
+		    System.out.println("All boxes found");
+		    System.exit(0);
+		}
         
         allows--;
         System.out.println("You have " + allows + " aloows");
