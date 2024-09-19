@@ -11,8 +11,8 @@ public class Main
 	    boolean isSecondMatch;
 	    boolean isThirdMatch;
 	    int count = 0;
-	    int allows = 4;
-	    while(allows > 0){
+	    int allows = 5;
+	    while(allows > 1){
 		for(int i=0; i<3; i++){
 		    array[i] = scan.nextInt();
 		}
@@ -39,18 +39,15 @@ public class Main
     }
         for(int i=0; i<3; i++){
 		    isThirdMatch = array[2] == thirdBox;
+		    
 		    if(isThirdMatch){
 		        System.out.println("Third box found");
-		        
 		        break;
 		    }
 		    else 
 		        System.out.println("Third box is not here");
-		    break;
-		    if ((isFisrtMatch) && (isSecondMatch) && (isThirdMatch)){
-                System.out.print("All boxes found");
-                System.exit(0);
-        }
+		        break;
+		    
         }
 		
         
